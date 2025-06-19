@@ -2,6 +2,9 @@ import express from "express";
 import session from "express-session";
 import passport from "passport";
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
+dotenv.config();
+
 import "./models/user.js";
 import keys from "./config/keys.js";
 import "./services/passport.js";
