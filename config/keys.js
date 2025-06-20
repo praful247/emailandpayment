@@ -1,8 +1,7 @@
-const keys = {
-  googleClientID: process.env.GOOGLE_CLIENT_ID,
-  googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  mongoURI: process.env.MONGO_URI,
-  cookieKey: process.env.COOKIE_KEY
-};
+// keys.js
+import devConfig from './dev.js';
+import prodConfig from './prod.js';
 
-export default keys;
+const config = process.env.NODE_ENV === 'production' ? prodConfig : devConfig;
+
+export default config;
