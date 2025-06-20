@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <a href=" https://emailandpayment-2.onrender.com/auth/google">Sign in with google</a>
       </header>
     </div>
   );
